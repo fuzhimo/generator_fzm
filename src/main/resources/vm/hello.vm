@@ -1,0 +1,4 @@
+#foreach($key in $table.keySet())
+    #set($Key = $utils.toUpperCaseFirstOne($key))
+    localModel.set$Key(x.get$Key);
+#end
